@@ -1,0 +1,75 @@
+body {
+font-family: Arial, sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 70%;
+    padding: 10px;
+}
+
+button {
+    padding: 10px 20px;
+}
+
+#messages {
+    border: 1px solid #ccc;
+    padding: 10px;
+    min-height: 200px;
+    overflow-y: auto;
+}
+
+.success-message {
+    color: white;
+}
+
+@keyframes changeColor {
+    0%, 100% {
+        transform: translateY(0);
+        filter: hue-rotate(0deg);
+    }
+    50% {
+        transform: translateY(-5px);
+        filter: hue-rotate(180deg);
+    }
+}
+
+h1 {
+    animation: changeColor 2s infinite;
+    color: white;
+    user-select: none;
+}
+
+@keyframes animateBackground {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+body {
+    animation: animateBackground 10s infinite;
+    background: url('gg.gif');
+    background-size: 1920px 1080px;
+}
+.success-message {
+    color: white;
+}

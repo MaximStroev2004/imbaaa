@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Приложение</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <script src="/static/client.js"></script>
+</head>
+<body>
+<audio id="background-music" loop>
+    <source src="https://goo.su/zQB94" type="audio/mpeg">
+    Your browser does not support the audio element.
+</audio>
+
+<script>
+    document.addEventListener('click', function() {
+        var audio = document.getElementById('background-music');
+        audio.play();
+    });
+</script>
+
+    <div class="container">
+        <h1>Передача сообщений</h1>
+        <form id="messageForm">
+            <input type="text" id="messageInput" placeholder="Введите сообщение">
+            <button type="submit">Отправить</button>
+        </form>
+        <div id="messages"></div>
+    </div>
+
+    <script src="client.js"></script>
+</body>
+</html>
